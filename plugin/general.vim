@@ -2,6 +2,7 @@
 "
 " - Appearance
 " - Buffers, splits
+" - Differences
 " - Filetypes, syntax highlighting
 " - Spelling
 " - Tabs, spaces, indents
@@ -136,6 +137,12 @@ command DoubleNav execute "set columns=195 lines=999"
 set hidden                "Hide abandoned buffers instead of closing
 set splitbelow            "Split window below current one
 set splitright            "Vertical split will open to right
+
+
+" ============================================================
+" Section: Differences
+
+set diffopt+=vertical     "Vertical split with diffsplit
 
 
 " ============================================================
