@@ -13,8 +13,8 @@
 " ============================================================
 " Section: Setup
 
-let s:sessiondir = $HOME . "/.vimsessions/"
-let s:sessionhist = $HOME . "/.vimsessions/sessionhist.txt"
+let s:sessiondir = $HOME . "/.vim/vimsessions/"
+let s:sessionhist = $HOME . "/.vim/vimsessions/sessionhist.txt"
 
 
 " ============================================================
@@ -86,6 +86,6 @@ command -nargs=1 RemoveSession call RemoveSession("<args>")
 command -nargs=1 Rms call RemoveSession("<args>")
 command ShowSessions call ShowSessionHistory()
 command Shs call ShowSessionHistory()
-command ViewSessions execute "echo expand('~/.vimsessions/*.vim')"
+command ViewSessions execute "echo expand('" . s:sessiondir . "*.vim')"
 command Vws execute "ViewSessions"
 
